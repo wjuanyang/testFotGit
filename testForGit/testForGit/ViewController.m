@@ -18,7 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1"]];
+    NSLog(@"second commit");
+    imageView.backgroundColor = [UIColor whiteColor];
+    NSLog(@"third commit");
+    imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    NSLog(@"forth commit");
+    imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:imageView];
+    
+    
 }
 
 
