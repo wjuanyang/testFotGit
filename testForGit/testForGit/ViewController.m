@@ -20,6 +20,8 @@
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1"]];
     NSLog(@"second commit");
     imageView.backgroundColor = [UIColor whiteColor];
+    NSLog(@"third commit");
+    imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     
     [self.view addSubview:imageView];
 }
